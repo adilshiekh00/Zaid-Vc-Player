@@ -3,7 +3,7 @@
     "logo": "https://telegra.ph/file/a5efad6976ca08e71ef69.jpg",
     "description": "ᴢᴀɪᴅ ᴠᴄ ᴘʟᴀʏᴇʀ ɪꜱ ᴀᴡᴇꜱᴏᴍᴇ ᴠᴄ ᴄʜᴀᴛ ᴘʟᴀʏᴇʀ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.",
     "keywords": ["ᴢᴀɪᴅ", "ᴠᴏɪᴄᴇ ᴄʜᴀᴛ", "ᴛᴇʟᴇɢʀᴀᴍ"],
-    "repository": "https://github.com/Itsunknown-12/Zaid-Vc-Player",
+    "repository": "https://github.com/adilshiekh00/Zaid-Vc-Player",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
