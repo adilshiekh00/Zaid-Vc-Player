@@ -144,7 +144,7 @@ def updated_stats(chat, queue, vol=100):
             stats += "ᴠᴏʟᴜᴍᴇ: {}%\n".format(vol)
             stats += "Qᴜᴇᴜᴇ ɴᴜᴍʙᴇʀ: `{}`\n".format(len(que))
             stats += "ꜱᴏɴɢ ɴᴀᴍᴇ: **{}**\n".format(queue[0][0])
-            stats += "ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ: {}".format(queue[0][1].mention)
+            stats += "𝔸𝔻𝕀𝕃 ᴜꜱᴇʀ ʙʏ: {}".format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -319,7 +319,7 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Zaid Started** Mm {}".format(cb.message.chat.title)
+        msg = "**𝔸𝔻𝕀𝕃 Started** Mm {}".format(cb.message.chat.title)
         msg += "\n• "+ now_playing
         msg += "\n• Atas permintaan "+by
         temp.pop(0)
@@ -454,7 +454,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "🤖: i'm joined to this group for playing music on voice chat"
+                        message.chat.id, "🤖: i'm joined to this group for playing music on voice chat MADE BY @HARAMI_BACHA_HU_SABHAL_KAR"
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -464,8 +464,8 @@ async def play(_, message: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>⛑ Flood Wait Error ⛑\n{user.first_name} Zaid helper is not in Ur chat plz add Manually."
-                        f"\n\nZaid Assistant @{ASSISTANT_NAME} try to add manually</b>",
+                        f"<b>⛑ Flood Wait Error ⛑\n{user.first_name} 𝔸𝔻𝕀𝕃 helper is not in Ur chat plz add Manually."
+                        f"\n\n𝔸𝔻𝕀𝕃 Assistant @{ASSISTANT_NAME} try to add manually</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -512,13 +512,13 @@ async def play(_, message: Message):
                     InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
                     InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Zaid_Updates")
+                    InlineKeyboardButton("📣 group", url=f"https://t.me/official_learning_zone")
                 ],
             ]
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/a5e1cc2bced0c70aeb913.png"
+        thumb_name = "https://telegra.ph/file/d21cdb0ed40293b7b7ea0.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -559,7 +559,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
                     InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Zaid_Updates")
+                    InlineKeyboardButton("📣 group", url=f"https://t.me/official_learning_zone")
                 ],
             ]
         )
@@ -586,7 +586,7 @@ async def play(_, message: Message):
             while j < 6:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:30]}](https://youtube.com{results[j]['url_suffix']})\n"
                 toxxt += f" ├ 💡 **ᴅᴜʀᴀᴛɪᴏɴ** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} ᴢᴀɪᴅ__\n\n"
+                toxxt += f" └ ⚡ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME} adil__\n\n"
                 j += 1            
             keyboard = InlineKeyboardMarkup(
                 [
@@ -643,7 +643,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
                     InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/zaid_Updates")
+                    InlineKeyboardButton("📣 group", url=f"https://t.me/official_learning_zone")
                 ],
             ]
             )
@@ -661,7 +661,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ɪɴ Qᴜᴇᴜᴇ**\n\n🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}\n" \
+            caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ɪɴ Qᴜᴇᴜᴇ**\n\n🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ADIL ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}\n" \
                    +f"\n🔢 **ᴛʀᴀᴄᴋ ᴘᴏꜱɪᴛɪᴏɴ:** » `{position}` «",
             reply_markup=keyboard
         )
@@ -682,7 +682,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             caption=f"🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
-                   +f"🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}",
+                   +f"🎧 **ADIL ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}",
             reply_markup=keyboard
         )
         os.remove("final.png")
@@ -742,7 +742,7 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
                     InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
                 ],[
-                    InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/zaid_Updates")
+                    InlineKeyboardButton("📣 GROUP", url=f"https://t.me/official_learning_zone")
                 ],
             ]
     )
@@ -764,7 +764,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
         chat_id,
         photo="final.png",
-        caption=f"💡 **ᴛʀᴀᴄᴋ ɪɴ Qᴜᴇᴜᴇ**\n\n🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {r_by.mention}\n" \
+        caption=f"💡 **ᴛʀᴀᴄᴋ ɪɴ Qᴜᴇᴜᴇ**\n\n🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🎧 **ADIL ᴜꜱᴇʀ ʙʏ:** {r_by.mention}\n" \
                +f"\n🔢 **ᴛʀᴀᴄᴋ ᴘᴏꜱɪᴛɪᴏɴ:** » `{position}` «",
         reply_markup=keyboard,
         )
@@ -786,7 +786,7 @@ async def lol_cb(b, cb):
         chat_id,
         photo="final.png",
         caption=f"🏷 **ɴᴀᴍᴇ:** [{title[:45]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n" \
-               +f"🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {r_by.mention}",
+               +f"🎧 **ADIL ᴜꜱᴇʀ ʙʏ:** {r_by.mention}",
         reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -829,7 +829,7 @@ async def ytplay(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "🤖: i'm joined to this group for playing music in voice chat"
+                        message.chat.id, "🤖: i'm joined to this group for playing music in voice chat powered by @HARAMI_BACHA_HUSAMBHAL_KAR"
                     )
                     await lel.edit(
                         "<b>💡 helper userbot succesfully joined your chat</b>",
@@ -840,7 +840,7 @@ async def ytplay(_, message: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>ꜰʟᴏᴏᴅ ᴡᴀɪᴛ ᴇʀʀᴏʀ\n{user.first_name} ᴢᴀɪᴅ ʜᴇʟᴘᴇʀ ɪꜱ ɴᴏᴛ ɪɴ ᴜʀ ᴄʜᴀᴛꜱ."
+                        f"<b>ꜰʟᴏᴏᴅ ᴡᴀɪᴛ ᴇʀʀᴏʀ\n{user.first_name} CRUSH ʜᴇʟᴘᴇʀ ɪꜱ ɴᴏᴛ ɪɴ ᴜʀ ᴄʜᴀᴛꜱ."
                         f"\n\nᴛʀʏ ᴛᴏ @{ASSISTANT_NAME} ᴀᴅᴅ ᴍᴀɴᴜᴀʟʟʏ</b>",
                     )
     try:
@@ -889,8 +889,8 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("🖱 ᴍᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
-                InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/zaid_Updates"),
-                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Zaid_Updates")
+                InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/offical_learning_zone"),
+                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/official_learning_zone")
             ],
         ]
     )
@@ -909,7 +909,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             caption = f"🏷 **ɴᴀᴍᴇ:** [{title[:25]}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😍 **ꜱᴛᴀᴛᴜꜱ:** `Qᴜᴇᴜᴇᴅ ɪɴ ᴘᴏꜱɪᴛɪᴏɴ {position}`\n" \
-                    + f"🎧 **ᴢᴀɪᴅ ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}",
+                    + f"🎧 **ADIL ᴜꜱᴇʀ ʙʏ:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
