@@ -1,8 +1,8 @@
 {
-    "name": "ᴢᴀɪᴅ ᴠᴄ ᴘʟᴀʏᴇʀ",
+    "name": "CRUSH ᴠᴄ ᴘʟᴀʏᴇʀ",
     "logo": "https://telegra.ph/file/a5efad6976ca08e71ef69.jpg",
-    "description": "ᴢᴀɪᴅ ᴠᴄ ᴘʟᴀʏᴇʀ ɪꜱ ᴀᴡᴇꜱᴏᴍᴇ ᴠᴄ ᴄʜᴀᴛ ᴘʟᴀʏᴇʀ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.",
-    "keywords": ["ᴢᴀɪᴅ", "ᴠᴏɪᴄᴇ ᴄʜᴀᴛ", "ᴛᴇʟᴇɢʀᴀᴍ"],
+    "description": "CRUSH ᴠᴄ ᴘʟᴀʏᴇʀ ɪꜱ ᴀᴡᴇꜱᴏᴍᴇ ᴠᴄ ᴄʜᴀᴛ ᴘʟᴀʏᴇʀ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.",
+    "keywords": ["CRUSH", "ᴠᴏɪᴄᴇ ᴄʜᴀᴛ", "ᴛᴇʟᴇɢʀᴀᴍ"],
     "repository": "https://github.com/adilshiekh00/Zaid-Vc-Player",
     "stack": "container",
     "env": {
@@ -42,12 +42,12 @@
         "BOT_USERNAME": {
             "description": "fill with your bot username without @",
             "required": true,
-            "value": "zaid2_robot"
+            "value": "crush_robot"
         },
         "ASSISTANT_NAME": {
             "description": "fill with the assistant username without @",
             "required": true,
-            "value": "zaid assistant"
+            "value": "crush assistant"
         },
         "OWNER_NAME": {
             "description": "fill with your username without @",
@@ -79,12 +79,12 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel fill the channel username here without @",
             "required": false,
-            "value": "Zaid_Updates"
+            "value": "officil_learning_zone"
         },
         "GROUP_SUPPORT": {
             "description": "if you have group fill the group username here without @",
             "required": false,
-            "value": "Zaid_Support"
+            "value": "official_learning_zone"
         }
     },
     "buildpacks": [
